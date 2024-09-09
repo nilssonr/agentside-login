@@ -1,0 +1,21 @@
+package page
+
+templ Base() {
+	<!DOCTYPE html>
+	<html>
+		@header()
+		<body>
+			{ children... }
+			<script src="/static/js/htmx.min.js"></script>
+		</body>
+	</html>
+}
+
+templ header() {
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Agentside - Login</title>
+		<link href="/static/css/styles.css" rel="stylesheet"/>
+	</head>
+}

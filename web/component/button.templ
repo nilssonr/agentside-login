@@ -1,0 +1,9 @@
+package component
+
+type ButtonParam struct {
+	Label string
+}
+
+templ Button(arg ButtonParam) {
+	<button class="button">{ arg.Label }</button>
+}
